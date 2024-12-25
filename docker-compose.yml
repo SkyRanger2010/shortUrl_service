@@ -1,0 +1,9 @@
+services:
+  shorturl-service:
+    image: skyranger2010/shorturl-service:latest
+    ports:
+      - "8000:80" 
+    volumes:
+      - shorturl-data:/app/data
+volumes:
+  shorturl-data:
